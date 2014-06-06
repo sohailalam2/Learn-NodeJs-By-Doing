@@ -36,15 +36,29 @@
     <div class="container">
         <div style="background:#e3e3e3">
             <div class="container" style="height:250px">
-                <h1 class="text-center text-info">HTTP Demo:</h1>
-                <div class="col-md-6 col-md-push-4">
+                <h1 class="text-center text-info">DEMO</h1>
+                <div class="col-md-6">
                     <br />
-                    <form class="form" method="post" action="/info">
+                    <form class="form" method="post" action="/login">
                         <div class="form-group">
-                            <label class="">Name:</label>
-                            <input class="input input-lg" type="text" name="name" required>
+                            <label class="">Username:</label>
+                            <input class="input input-lg" type="text" name="username" required>
                         </div>
-                        <button class="btn btn-success">Submit</button>
+                        <div class="form-group">
+                            <label class="">Password:</label>
+                            <input class="input input-lg" type="text" name="password" required>
+                        </div>
+                        <button class="btn btn-info">Login</button>
+                    </form>
+                </div>
+                <div class="col-md-6 pull-right">
+                    <br />
+                    <form class="form" method="post" action="/file" enctype="application/x-www-form-urlencoded">
+                        <div class="form-group">
+                            <label class="">Select a file to upload:</label>
+                            <input type="file" name='file' required>
+                        </div>
+                        <button class="btn btn-danger">Upload</button>
                     </form>
                 </div>
             </div>

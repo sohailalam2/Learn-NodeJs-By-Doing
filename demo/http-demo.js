@@ -25,12 +25,12 @@ var server = http.createServer(function (req, res) {
             case '/':
                 http_helper.sendIndexPage(req, res);
                 break;
-            case '/info':
+            case '/login':
                 if ('POST' == req.method) {
                     res.writeHead(200, {
                         'Content-Type': 'text/html'
                     });
-                    res.end('<p>CONTENT TYPE: ' + req.headers['content-type'] + '</p><p>Your name is: ' + queryString.parse(body).name + '</p>');
+                    res.end('<p>CONTENT TYPE: ' + req.headers['content-type'] + '</p><p>Your username is: ' + queryString.parse(body).username + '</p>');
                 } else {
                     http_helper.send400(req, res);
                 }

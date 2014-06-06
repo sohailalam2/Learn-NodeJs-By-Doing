@@ -46,6 +46,15 @@ HttpHelper.prototype.send404 = function (req, res) {
     res.end();
 };
 
+// Helper function for sending 404 error response
+HttpHelper.prototype.send200 = function (req, res) {
+    res.writeHead(200, {
+        'Content-Type': 'text/html'
+    });
+    res.write('200: OK<br /><br />');
+    res.end();
+};
+
 // Helper function for sending the index page
 HttpHelper.prototype.sendIndexPage = function (req, res) {
     res.writeHead(200, {
