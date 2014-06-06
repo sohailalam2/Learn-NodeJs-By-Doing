@@ -1,6 +1,11 @@
 {
     "sohail": {
-        "password": "s.alam",
+        "password": "sohail",
         "name": "Sohail Alam"
+    },
+
+    "john": {
+        "password": "doe",
+        "name": "John Doe"
     }
 }
