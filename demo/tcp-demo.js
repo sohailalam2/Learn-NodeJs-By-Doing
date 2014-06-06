@@ -83,7 +83,7 @@ var server = net.createServer(function (socket) {
     connectionCount++;
 });
 
-// Listen for connection - telnet localhost 3000
-server.listen(3000, function () {
-    console.log('\033[96m TCP Server Listening on *:3000 \033[39m');
+// Listen for connection - telnet localhost 3333
+server.listen(3333, function () {
+    console.log('\033[96m TCP Server Listening on *:3333 \033[39m');
 });

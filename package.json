@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sohail Alam",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^2.19.4"
+  }
 }
