@@ -1,0 +1,22 @@
+{
+  "name": "Learn-NodeJS",
+  "main": "index.js",
+  "version": "0.0.1",
+  "authors": [
+    "Sohail Alam <sohailalam2@hotmail.com>"
+  ],
+  "description": "This is how I learnt NodeJS",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ]
+}
